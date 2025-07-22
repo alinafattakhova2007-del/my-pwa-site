@@ -1,0 +1,183 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #ffffff;
+    background: url('images/global-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #121212;
+    min-height: 100vh;
+}
+
+/* Основной контейнер для контента */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(30, 30, 30, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Шапка с полупрозрачным фоном */
+.header {
+    background-color:  rgba(30, 30, 30, 0.85);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+    backdrop-filter: blur(5px);
+    margin-bottom: 30px;
+    border-bottom: 3px solid #d9534f;
+}
+
+.header .container {
+    background-color: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.header p {
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Навигация */
+.navbar {
+    background-color: rgba(44, 62, 80, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.navbar .container {
+    background-color: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    padding: 15px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    color: #f1c40f;
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* Текстовые блоки */
+.text-block {
+    background-color: rgba(40, 40, 40, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    padding: 25px;
+    margin: 20px 0;
+    border-left: 4px solid #d9534f;
+    transition: all 0.3s ease;
+}
+
+.text-block:hover {
+    background-color: rgba(50, 50, 50, 0.8);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Контейнеры информации */
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.info-box {
+    background: rgba(50, 50, 50, 0.7);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    padding: 20px;
+    border-top: 4px solid #d9534f;
+    transition: all 0.3s ease;
+}
+
+.info-box:hover {
+    background-color: rgba(60, 60, 60, 0.8);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.info-box h3 {
+    color: #f1c40f;
+    margin-top: 0;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.info-box .icon {
+    margin-right: 10px;
+    font-size: 1.6rem;
+}
+
+.info-box ul {
+    padding-left: 20px;
+}
+
+.info-box li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Подвал */
+.footer {
+    background-color: rgba(20, 20, 20, 0.95);
+    color: #aaa;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    border-top: 1px solid #444;
+    backdrop-filter: blur(5px);
+}
+
+.footer .container {
+    background-color: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+}
+
+
+}
